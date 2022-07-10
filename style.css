@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+}
+
+:root {
+  --yellow: #ffcc29;
+  --blue: #1d539e;
+  --gray: #828799;
+  --page-background: #f9fbfc;
+}
+
+body {
+  margin: auto 167px;
+  background: var(--blue);
+  background: linear-gradient(
+    0deg,
+    var(--page-background) 0%,
+    var(--page-background) 50%,
+    var(--blue) 50%,
+    var(--blue) 100%
+  );
+  background-repeat: no-repeat;
+}
+
+/* Título e sub-título da página */
+
+header .titulo {
+  margin-top: 100px;
+  display: grid;
+  justify-items: center;
+}
+
+header .titulo h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+header .titulo h2 {
+  color: white;
+  font-weight: 400;
+  font-size: 1.125rem;
+  margin-bottom: 75px;
+}
+
+/* Opções de planos */
+
+.quadro {
+  width: 355px;
+  height: 470px;
+  background: white;
+  padding: 30px;
+
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px #888888;
+}
+
+.quadropromo {
+  width: 355px;
+  height: 490px;
+  background: white;
+
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px #888888;
+}
+
+/* Tipo de plano: Free, básico ou profissional */
+.container h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* Certinho*/
+.container p {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: hsl(227, 10%, 55%);
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Divisor */
+.divider {
+  height: 1px;
+  background: hsl(0, 0%, 93%);
+  margin: 20px auto;
+}
+
+/* Quadros */
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 1105px;
+  height: 470px;
+  align-items: center;
+}
+
+.quadro p2,
+.quadropromo p2 {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.quadro p1,
+.quadropromo p1 {
+  font-weight: 700;
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.quadropromo p1 {
+  margin-top: 10px;
+}
+
+.quadro span,
+.quadropromo span {
+  font-size: 1.125rem;
+}
+
+.quadro span2,
+.quadropromo span2 {
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.conteudo {
+  height: 316px;
+}
+
+.quadropromo .conteudo,
+.quadropromo .button {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.amarelo {
+  height: 76px;
+  padding-left: 30px;
+
+  display: flex;
+  background-color: var(--yellow);
+  border-radius: 8px 8px 0px 0px;
+  color: var(--blue);
+}
+
+.amarelo h2 {
+  margin-top: 24px;
+}
+
+.amarelo p {
+  margin-left: 8.725rem;
+  width: 94px;
+  height: 32px;
+
+  background-color: var(--blue);
+  font-size: 12px;
+  color: white;
+  border-radius: 24px;
+  padding-left: 24px;
+}
+
+/* Botão */
+
+.button button {
+  padding: 12px 24px;
+  width: 18.5rem;
+  border-radius: 10px;
+  background-color: white;
+  border-color: hsl(215, 69%, 37%);
+  border: 1px solid;
+
+  color: hsl(215, 69%, 37%);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.button button:hover {
+  background: hsl(215, 69%, 37%);
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
